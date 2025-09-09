@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de ZONGO Celse Marius</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#propos">À Propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">Changer de thème</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>
+          De la Modélisation à la Simulation : je transforme des concepts
+          complexes en solutions numériques.
+        </p>
+      </section>
+
+      <section id="propos">
+        <h2>À Propos de moi</h2>
+        <img src="Celse.jpg" alt="Photo de ZONGO Celse Marius" />
+        <p>
+          Bonjour ! Je m'appelle ZONGO Celse Marius. Je suis un étudiant en fin
+          de cycle de la licence en **Modélisation-Simulation et Calcul
+          Scientifique** à l'Université virtuelle du Burkina Faso. Passionné par
+          l'intersection des mathématiques, de l'informatique et du monde réel,
+          je m'intéresse particulièrement à la création de solutions web qui
+          exploitent la puissance du calcul.
+        </p>
+      </section>
+
+      <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="cartes-container">
+          <article>
+            <img
+              src="simulation scientifique.jpg"
+              alt="Image d'une simulation scientifique"
+            />
+            <h3>Simulateur de propagation</h3>
+            <p>
+              Développement d'une application web de visualisation de la
+              propagation de phénomènes physiques, utilisant JavaScript pour des
+              animations fluides et des rendus graphiques interactifs.
+            </p>
+            <a href="#">Voir le projet</a>
+          </article>
+          <article>
+            <img
+              src="simulateur de propagation.jpg"
+              alt="Image d'un projet de data-visualisation"
+            />
+            <h3>Outil de data-visualisation</h3>
+            <p>
+              Création d'un tableau de bord pour la visualisation de données
+              scientifiques complexes, avec des graphiques dynamiques et une
+              interface utilisateur intuitive pour l'analyse des résultats.
+            </p>
+            <a href="#">Voir le projet</a>
+          </article>
+          <article>
+            <img
+              src="outils de visualisation.jpg"
+              alt="Image d'un site web interactif"
+            />
+            <h3>Portail éducatif</h3>
+            <p>
+              Conception d'un site web interactif pour partager des ressources
+              sur la modélisation et la simulation, intégrant des quiz et des
+              exemples de code pour faciliter l'apprentissage.
+            </p>
+            <a href="#">Voir le projet</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form id="contact-form">
+          <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="confirmation-message"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ZONGO Celse Marius. Tous droits réservés.</p>
+    </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

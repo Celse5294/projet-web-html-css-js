@@ -1,0 +1,231 @@
+/* Définition des polices, couleurs et espacements de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styles pour les titres */
+h1, h2, h3 {
+    color: #007bff; /* Une couleur bleue pour les titres, vous pouvez la changer */
+}
+
+/* Styles pour les sections */
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+}
+/* Styles pour la barre de navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; /* Reste en haut de la page au défilement */
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+    justify-content: center;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px; /* Bordures arrondies */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: #555;
+    border-color: #fff;
+}
+/* Styles pour la bannière (Hero) */
+#hero {
+    background: url('image\ de\ fonds.jpg') no-repeat center center/cover; /* Chemin vers votre image de fond */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+/* Styles pour la section Projets */
+#projets {
+    background-color: #fff; /* Fond blanc pour contraster */
+    text-align: center;
+}
+
+#projets h2 {
+    margin-bottom: 40px;
+}
+
+#projets .cartes-container {
+    display: flex; /* Active Flexbox sur le conteneur */
+    justify-content: space-around; /* Distribue l'espace entre les cartes */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si l'espace est insuffisant */
+    gap: 20px; /* Ajoute un espace entre les cartes */
+}
+
+#projets article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33% - 20px); /* Chaque carte prend environ un tiers de la largeur, moins l'espace */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+#projets article:hover {
+    transform: translateY(-5px); /* Effet de survol */
+}
+
+#projets article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+/* Media Queries pour le responsive design */
+@media (max-width: 768px) {
+    #projets .cartes-container {
+        flex-direction: column; /* Les cartes s'empilent en colonne sur mobile */
+        align-items: center; /* Centrer les cartes */
+    }
+
+    #projets article {
+        width: 90%; /* Chaque carte prend presque toute la largeur disponible */
+        flex-basis: auto; /* Annule la base Flexbox */
+    }
+}
+/* Styles pour la section Contact */
+#contact {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact form textarea {
+    resize: vertical;
+}
+
+#contact form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover,
+#contact form button:focus {
+    background-color: #0056b3;
+}
+/* Styles pour le pied de page (Footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Styles d'accessibilité et de bonnes pratiques */
+body {
+    /* ... (les styles déjà en place) ... */
+    color: #333; /* S'assurer d'un contraste suffisant */
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #007bff; /* Mettre en évidence les éléments focus */
+    outline-offset: 3px;
+}
+
+/* Règle pour un contraste suffisant si vous utilisez des fonds de couleurs foncées */
+.dark-theme body {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+.dark-theme h1,
+.dark-theme h2 {
+    color: #87ceeb; /* Une couleur claire pour les titres en mode sombre */
+}
+/* Style du bouton "Retour en haut" */
+#back-to-top {
+    display: none; /* Cache le bouton par défaut */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
