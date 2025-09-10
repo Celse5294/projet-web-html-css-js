@@ -10,6 +10,6 @@ fictifs liés à la visualisation de données et à l'informatique scientifique.
 ## Lancer le projet
 Ouvrez index.html dans votre navigateur.
 ## Démo (optionnel)
-Lien GitHub Pages : https://Celse5294/projet-web-html-css-js.
+Lien GitHub Pages : https://github.com/Celse5294/projet-web-html-css-js..git
 ## Auteur
 ZONGO Celse Marius
