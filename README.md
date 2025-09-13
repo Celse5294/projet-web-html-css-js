@@ -12,6 +12,6 @@ pour une expérience utilisateur fluide et intuitive.
 ## Lancer le projet
 Ouvrez index.html dans votre navigateur.
 ## Démo (optionnel)
-Lien GitHub Pages : https://Celse5294/projet-web-html-css-js/
+Lien GitHub Pages : https://celse5294.github.io/projet-web-html-css-js/
 ## Auteur
 ZONGO Celse Marius
