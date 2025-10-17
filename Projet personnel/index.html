@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de projets - de Zongo Celse Marius</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a; /* Bleu-Gris foncé */
+        color: #f8fafc;
+      }
+      .header-bg {
+        background-color: #1e293b;
+      }
+      .project-card {
+        background-color: #334155;
+        border: 1px solid #475569;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      /* Tags de compétences spécifiques au SI/Data */
+      .tag-datascience {
+        background-color: #a855f7;
+        color: #f8fafc;
+      } /* Violet pour Data */
+      .tag-rstudio {
+        background-color: #276dc3;
+        color: #f8fafc;
+      } /* Bleu pour R Studio */
+      .tag-postgresql {
+        background-color: #4caf50;
+        color: #0f172a;
+      } /* Vert pour PostgreSQL */
+      .tag-scilab {
+        background-color: #00bcd4;
+        color: #0f172a;
+      } /* Cyan pour Scilab */
+      .tag-visualization {
+        background-color: #ef4444;
+        color: #f8fafc;
+      } /* Rouge pour Visualisation */
+      .tag-database {
+        background-color: #f97316;
+        color: #f8fafc;
+      } /* Orange pour BDD */
+    </style>
+  </head>
+  <body class="p-4 md:p-12">
+    <header class="header-bg rounded-lg p-6 mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2">
+       Portfolio de Projets Zongo Celse Marius
+      </h1>
+      <h2 class="text-xl md:text-2xl text-cyan-400">
+        Candidature au poste de Chargé Système d'Information
+      </h2>
+      <p class="text-sm text-gray-400 mt-2">
+        Démonstration de compétences en R Studio, PostgreSQL et Scilab
+        appliquées à l'infrastructure
+      </p>
+    </header>
+
+    <main class="grid gap-10">
+      <!-- Section 1: Projet d'Analyse Statistique et Modélisation (R Studio) -->
+      <div class="project-card rounded-xl p-6 md:p-8">
+        <div class="flex flex-wrap items-center justify-between mb-4">
+          <h3 class="text-2xl md:text-3xl font-semibold text-white">
+            Projet 1 : VISUALISATION AVANCEE DES DONNEES DANS R AVEC GRAPHIQUES
+            INTERACTIF
+          </h3>
+          <div class="space-x-2 mt-2 md:mt-0">
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-datascience"
+              >Analyse Statistique</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-rstudio"
+              >R/R Studio</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-visualization"
+              >Visualisation</span
+            >
+          </div>
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Les graphiques que j'ai construis dans la prémière section aident à
+          examiner dans quelle mesure deux ou plusieurs variables sont
+          corrélées. Les graphiques de déviation dans la 2ème section servent à
+          comparer la variation des valeurs entre un petit nombre d'éléments (ou
+          catégories) par rapport à une référence fixe. Les graphiques de
+          classement sont utilisés pour comparer la position ou les performances
+          de plusieurs éléments les uns par rapport aux autres. Les graphiques
+          de distribution sont utilisés lorsque nous avons beaucoup de points de
+          données et que nous souhaitons étudier où et comment les points de
+          données sont distribués. Le présent projet personnel vise à remforcer mes compétences en analyse statistique,le nettoyage de données, ma capacité à comprendre et à extraire des informations pertinentes des données,la visualisation et la modélisation. 
+        </p>
+
+        <div class="space-y-4">
+          <h4
+            class="text-xl font-semibold text-white border-b border-gray-600 pb-2"
+          >
+            Réalisations Techniques Clés
+          </h4>
+
+          <div class="bg-gray-700 rounded-lg p-4">
+            <p class="font-medium text-gray-200">Chaîne de Traitement R :</p>
+            <p class="text-gray-300">
+               Plusieurs librairies sont utilisées pour la visualisation des
+              ces données. Nous avons utilisées entre autres(ggplot2,
+              ggalt,ggExtra, ggcorrplot, plotly, quantmod, ggthemes, waffle,
+              highcharter, dplyr, ggfortify)
+            </p>
+          </div>
+
+        
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://drive.google.com/file/d/1hCySy6Ia4UpIhhzQIQkj45xikur9dliz/view?usp=drive_link"
+            target="_blank"
+            class="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
+          >
+            Voir le Rapport PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 2: Projet de Gestion et d'Architecture de Base de Données (PostgreSQL) -->
+      <div class="project-card rounded-xl p-6 md:p-8">
+        <div class="flex flex-wrap items-center justify-between mb-4">
+          <h3 class="text-2xl md:text-3xl font-semibold text-white">
+            Projet 2 : Conception d'une base de données
+          </h3>
+          <div class="space-x-2 mt-2 md:mt-0">
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-database"
+              >Architecture BDD</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-postgresql"
+              >PostgreSQL/SQL</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-datascience"
+              >Extraction de Données</span
+            >
+          </div>
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Ce projet vise à concevoir et développer une base de données pour
+          optimiser la gestion des opérations commerciales au sein d'une
+          compagnie d'assurance. En tenant compte des processus liés à la
+          prospection, à la souscription et à la gestion des commissions, nous
+          avons abordé la modélisation, l'implémentation et l'optimisation d'une
+          base de données dans un contexte réel. Ce projet a été réalisé par
+          groupe de binôme recommander par notre professeurs de base de donnée
+          avancées.
+        </p>
+
+        <div class="space-y-4">
+          <h4
+            class="text-xl font-semibold text-white border-b border-gray-600 pb-2"
+          >
+            Réalisations Techniques Clés
+          </h4>
+
+          <div class="bg-gray-700 rounded-lg p-4">
+            <p class="font-medium text-gray-200">Modélisation de Données :</p>
+            <p class="text-gray-300">
+              Le projet repose sur l’utilisation des outils de modélisation UML
+              et d’un système de gestion de bases de données relationnelles. Il
+              couvre l’ensemble des opérations commerciales, notamment la
+              prospection, la gestion des souscriptions, et le suivi des
+              performances des agents commerciaux.
+            </p>
+          </div>
+
+          
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://drive.google.com/file/d/13EO6esXMzaMiWSALBxrduuKuPUEP5ruK/view?usp=drive_link"
+            target="_blank"
+            class="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
+          >
+            Voir le Rapport PDF
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Section 3: Projet de Calcul Scientifique et Simulation Numérique (Scilab) -->
+      <div class="project-card rounded-xl p-6 md:p-8">
+        <div class="flex flex-wrap items-center justify-between mb-4">
+          <h3 class="text-2xl md:text-3xl font-semibold text-white">
+            Projet 3 : Modélisation et Simulation du son d’une corde de guitare
+          </h3>
+          <div class="space-x-2 mt-2 md:mt-0">
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-datascience"
+              >Calcul Scientifique</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-scilab"
+              >Scilab/Xcos</span
+            >
+            <span
+              class="inline-block px-3 py-1 text-xs font-semibold rounded-full tag-visualization"
+              >Résolution de Problèmes</span
+            >
+          </div>
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Le présent projet vise à explorer la modélisation et la simulation
+          numérique de la vibration d’une corde de guitare. L’objectif principal
+          est de concevoir un outil numérique capable de reproduire, de manière
+          fidèle et interactive, le comportement acoustique d’une corde
+          vibrante, depuis sa déformation initiale (pincement) jusqu’à la
+          génération du son audible. Pour ce faire, nous utilisons
+          l’environnement Scilab, qui offre des outils puissants pour la
+          résolution d’équations aux dérivées partielles et l’animation de
+          phénomènes dynamiques. Ce présent projet est réalisé par groupe de binôme pendant notre cursus universitaire par Notre professeur de la modélisation en physique
+        </p>
+
+        <div class="space-y-4">
+          <h4
+            class="text-xl font-semibold text-white border-b border-gray-600 pb-2"
+          >
+            Réalisations Techniques Clés
+          </h4>
+
+          <div class="bg-gray-700 rounded-lg p-4">
+            <p class="font-medium text-gray-200">
+              Implémentation d'Algorithmes :
+            </p>
+            <p class="text-gray-300">
+              Dans un premier temps, la corde est modélisée de façon idéale en considérant une équation
+des ondes simplifiée. Cette approche permet d’établir les modes propres de vibration ainsi que
+la fréquence fondamentale en fonction des paramètres physiques tels que la tension, la
+longueur et la masse linéique. Par la suite, le modèle est enrichi en intégrant des phénomènes
+réels tels que la raideur de la corde et les amortissements dus aux frottements et aux processus
+dissipatifs internes. Ces améliorations conduisent à une équation aux dérivées partielles plus
+complexe, dont la stabilité est étudiée via l’analyse de Von Neumann.
+La discrétisation spatiale et temporelle de la corde, associée à un schéma implicite par
+différences finies, permet de simuler l’évolution du profil de la corde au fil du temps.
+Parallèlement, l’enregistrement du signal aux positions de plusieurs micros, modélisés à
+l’aide de techniques d’interpolation, offre une restitution sonore fidèle du phénomène.
+L’analyse spectrale du son produit, notamment par transformée de Fourier, permet de vérifier
+la correspondance entre la fréquence fondamentale simulée et la note attendue, tout en mettant
+en évidence l’influence des paramètres d’inharmonicité et de la position de pincement sur le
+timbre.
+            </p>
+          </div>
+
+          
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://drive.google.com/file/d/15ZLUQgA3O_PRdvz2g83s32HKpvWgZgV_/view?usp=drive_link"
+            target="_blank"
+            class="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
+          >
+            Voir le Rapport PDF
+          </a>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
