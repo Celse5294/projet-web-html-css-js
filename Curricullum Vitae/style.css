@@ -1,0 +1,154 @@
+/* --- Variables & Reset de Base --- */
+:root {
+    --primary-color: #007bff; /* Bleu professionnel */
+    --secondary-color: #f8f9fa; /* Gris clair pour les fonds */
+    --text-color: #333;
+    --header-bg: #212529; /* Fond foncé pour l'entête */
+    --header-text: white;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+/* --- Header (Héros) --- */
+.hero {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* --- Mise en page Générale --- */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-card h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* --- Timeline (Expérience/Formation) --- */
+.timeline-item {
+    border-left: 3px solid #ccc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-item h4 {
+    color: var(--primary-color);
+}
+
+.timeline-item .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* --- Compétences --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-item {
+    background-color: var(--primary-color);
+    color: var(--header-text);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Style pour cacher/afficher avec JS */
+.skill-item.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.filter-buttons {
+    text-align: center;
+}
+
+.filter-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--header-text);
+}
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* --- Responsive Design (Mobile) --- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+}
