@@ -139,16 +139,41 @@ footer {
 
 /* --- Responsive Design (Mobile) --- */
 @media (max-width: 600px) {
+    
+    /* ... Vos règles existantes ... */
+    
+    /* 1. Adapter la grille de compétences (si elle était trop serrée) */
+    .skills-grid {
+        gap: 8px; /* Réduire l'espacement */
+        justify-content: center; /* Centrer les éléments */
+    }
+
+    .skill-item {
+        font-size: 0.8em; /* Rendre le texte un peu plus petit */
+        padding: 6px 10px; 
+    }
+
+    /* 2. Simplifier la section Contact (passer à une seule colonne) */
+    .contact-details {
+        grid-template-columns: 1fr; /* Force une colonne unique */
+    }
+    
+    .contact-item {
+        text-align: left; /* Meilleure lisibilité du contact sur une seule colonne */
+    }
+
+    /* 3. Ajuster l'espacement et les marges globales */
+    .section-card {
+        padding: 20px; /* Réduire le rembourrage des cartes pour gagner de la place */
+        margin-bottom: 20px;
+    }
+    
+    /* 4. Réduire la taille du titre principal sur mobile */
     .hero h1 {
-        font-size: 2em;
+        font-size: 1.8em; /* Légèrement plus petit pour les très petits écrans */
     }
 
-    .hero p {
-        font-size: 0.9em;
-    }
-
-    .container {
-        margin: 20px auto;
-        padding: 0 10px;
+    .timeline-item {
+        padding-left: 15px; /* Réduire la marge de la timeline */
     }
 }
